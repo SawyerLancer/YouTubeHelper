@@ -9,6 +9,8 @@
 require_once __DIR__ . '/vendor/autoload.php'; // Autoload files using Composer autoload
 
 
-echo YouTubeHelper::getMessage ();
+ $Helper = new YouTubeHelper();
+ $Helper->putUrl ('https://www.youtube.com/watch?v=WQZHLA_1umQ&list=OLAK5uy_m7rAtJlnIvt2XqI7P5B5A3iWhhHFgZxEA&index=6');
+echo  $Helper->getUrl ();
 
 ?>
